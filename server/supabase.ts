@@ -11,9 +11,9 @@ import {
 
 dotenv.config();
 
-// Active Supabase Credentials for Project wthajsdsaryerqkglysp
-export const DEFAULT_SUPABASE_URL = 'https://wthajsdsaryerqkglysp.supabase.co';
-export const DEFAULT_SUPABASE_KEY = 'sb_publishable_R5USLrvqqnfWUVBuK6L5wA_TGg19YA5';
+// Active Supabase Credentials for Project hvqmnwutfppfjkwterca
+export const DEFAULT_SUPABASE_URL = 'https://hvqmnwutfppfjkwterca.supabase.co';
+export const DEFAULT_SUPABASE_KEY = 'sb_publishable_way-34fnanwwLVDbPe5ukA_-Sq58IbH';
 
 let supabaseInstance: SupabaseClient | null = null;
 

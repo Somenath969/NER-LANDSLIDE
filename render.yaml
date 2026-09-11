@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: bhuraksha-ner
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: SUPABASE_URL
+        value: https://hvqmnwutfppfjkwterca.supabase.co
+      - key: SUPABASE_ANON_KEY
+        value: sb_publishable_way-34fnanwwLVDbPe5ukA_-Sq58IbH
+      - key: VITE_SUPABASE_URL
+        value: https://hvqmnwutfppfjkwterca.supabase.co
+      - key: VITE_SUPABASE_ANON_KEY
+        value: sb_publishable_way-34fnanwwLVDbPe5ukA_-Sq58IbH
+      - key: VITE_MAPTILER_API_KEY
+        value: PD1myr0t87Z92zHcr5h1
+      - key: MAPTILER_API_KEY
+        value: PD1myr0t87Z92zHcr5h1
+      - key: OGD_API_KEY
+        value: 579b464db66ec23bdd000001515d9e6c218046fc6d6860088baed379
+      - key: VITE_OGD_API_KEY
+        value: 579b464db66ec23bdd000001515d9e6c218046fc6d6860088baed379
