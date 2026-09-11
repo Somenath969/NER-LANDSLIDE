@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "Bhuraksha NER - AI Disaster Management",
+  "short_name": "Bhuraksha NER",
+  "description": "Offline-First AI Early Warning, Landslide Hazard Risk Mapping, and Incident Reconnaissance Platform for the North Eastern Region of India.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#020617",
+  "theme_color": "#0f172a",
+  "categories": ["weather", "utilities", "government"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

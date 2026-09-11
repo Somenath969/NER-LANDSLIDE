@@ -1,0 +1,482 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   THEME STYLING & SYSTEM FOUNDATIONS
+   ========================================================================== */
+:root {
+  color-scheme: dark light;
+}
+
+/* Dark Mode Foundations (Unchanged) */
+html.dark, body.dark {
+  background-color: #020617;
+  color: #f8fafc;
+}
+
+/* ==========================================================================
+   LIGHT MODE: CIVIL GEOTECHNICAL COMMAND THEME
+   Crisp daylight terrain palette: Soft alpine slate canvas (#f1f5f9),
+   pure porcelain white cards (#ffffff) with subtle structural shadows,
+   deep ink typography (#0f172a), rich status colors, and zero neon glare.
+   ========================================================================== */
+html.light, body.light {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+/* 1. Page Backgrounds & App Wrappers */
+html.light .bg-slate-950,
+html.light main.bg-slate-950,
+html.light div.bg-slate-950 {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .bg-slate-950\/60,
+html.light .bg-slate-950\/70,
+html.light .bg-slate-950\/80,
+html.light .bg-slate-950\/90 {
+  background-color: #e2e8f0 !important;
+}
+
+/* 2. Elevated Cards, Sidebar & Header Panels */
+html.light .bg-slate-900,
+html.light aside,
+html.light aside .bg-slate-900,
+html.light header.bg-slate-900 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light .bg-slate-900\/90,
+html.light .bg-slate-900\/80,
+html.light .bg-slate-900\/70,
+html.light .bg-slate-900\/60,
+html.light .bg-slate-900\/50,
+html.light .bg-slate-900\/40 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light .bg-slate-900.border,
+html.light .bg-slate-900.rounded-2xl,
+html.light .bg-slate-900.rounded-xl,
+html.light .modal-container,
+html.light [role="dialog"] {
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.03) !important;
+}
+
+/* 3. Inset Containers, Sub-Cards & Secondary Panels */
+html.light .bg-slate-850,
+html.light .bg-slate-800,
+html.light .bg-slate-800\/90,
+html.light .bg-slate-800\/80,
+html.light .bg-slate-800\/70,
+html.light .bg-slate-800\/60,
+html.light .bg-slate-800\/50 {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light .bg-slate-750,
+html.light .bg-slate-700,
+html.light .bg-slate-700\/50 {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* 4. Structural Borders */
+html.light .border-slate-800,
+html.light .border-slate-800\/90,
+html.light .border-slate-800\/80,
+html.light .border-slate-800\/60,
+html.light .border-slate-700,
+html.light .border-slate-700\/80,
+html.light .border-slate-700\/60,
+html.light .border-slate-600 {
+  border-color: #e2e8f0 !important;
+}
+
+/* 5. Typography & Contrast Hierarchy */
+html.light .text-slate-100,
+html.light .text-slate-200 {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light .text-slate-400 {
+  color: #475569 !important;
+}
+
+html.light .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* 6. Accent Text Colors (Rich, deep & readable in daylight) */
+html.light .text-red-300,
+html.light .text-red-400,
+html.light .text-rose-300,
+html.light .text-rose-400 {
+  color: #b91c1c !important;
+}
+
+html.light .text-amber-300,
+html.light .text-amber-400,
+html.light .text-yellow-300,
+html.light .text-yellow-400 {
+  color: #b45309 !important;
+}
+
+html.light .text-orange-300,
+html.light .text-orange-400 {
+  color: #c2410c !important;
+}
+
+html.light .text-emerald-300,
+html.light .text-emerald-400,
+html.light .text-green-300,
+html.light .text-green-400 {
+  color: #047857 !important;
+}
+
+html.light .text-cyan-300,
+html.light .text-cyan-400,
+html.light .text-teal-300,
+html.light .text-teal-400 {
+  color: #0e7490 !important;
+}
+
+html.light .text-indigo-300,
+html.light .text-indigo-400,
+html.light .text-blue-300,
+html.light .text-blue-400 {
+  color: #4338ca !important;
+}
+
+html.light .text-purple-300,
+html.light .text-purple-400,
+html.light .text-violet-300,
+html.light .text-violet-400 {
+  color: #6d28d9 !important;
+}
+
+/* 7. Badges, Notification Chips & Hazard Tones */
+/* Critical Hazard / Red / Rose */
+html.light .bg-red-500\/10,
+html.light .bg-red-500\/20,
+html.light .bg-red-950,
+html.light .bg-red-950\/40,
+html.light .bg-red-950\/50,
+html.light .bg-red-950\/60,
+html.light .bg-red-950\/70,
+html.light .bg-rose-950,
+html.light .bg-rose-950\/60 {
+  background-color: #fef2f2 !important;
+  color: #b91c1c !important;
+  border-color: #fecaca !important;
+}
+
+html.light .border-red-500\/30,
+html.light .border-red-500\/40,
+html.light .border-red-600\/60,
+html.light .border-rose-600\/60,
+html.light .border-red-800 {
+  border-color: #fca5a5 !important;
+}
+
+/* High Risk / Amber / Yellow */
+html.light .bg-amber-500\/10,
+html.light .bg-amber-500\/20,
+html.light .bg-amber-950,
+html.light .bg-amber-950\/40,
+html.light .bg-amber-950\/50,
+html.light .bg-amber-950\/70,
+html.light .bg-amber-950\/80,
+html.light .bg-yellow-950,
+html.light .bg-yellow-950\/80 {
+  background-color: #fffbeb !important;
+  color: #b45309 !important;
+  border-color: #fde68a !important;
+}
+
+html.light .border-amber-500\/30,
+html.light .border-amber-500\/40,
+html.light .border-amber-800,
+html.light .border-yellow-800 {
+  border-color: #fde68a !important;
+}
+
+/* Orange Lifelines Disrupted */
+html.light .bg-orange-500\/10,
+html.light .bg-orange-500\/20,
+html.light .bg-orange-950 {
+  background-color: #fff7ed !important;
+  color: #c2410c !important;
+  border-color: #fed7aa !important;
+}
+
+html.light .border-orange-500\/30,
+html.light .border-orange-500\/40 {
+  border-color: #fed7aa !important;
+}
+
+/* Safe / Green / Emerald */
+html.light .bg-emerald-500\/10,
+html.light .bg-emerald-500\/20,
+html.light .bg-emerald-950,
+html.light .bg-emerald-950\/40,
+html.light .bg-emerald-950\/80,
+html.light .bg-green-950 {
+  background-color: #f0fdf4 !important;
+  color: #047857 !important;
+  border-color: #bbf7d0 !important;
+}
+
+html.light .border-emerald-500\/30,
+html.light .border-emerald-500\/40,
+html.light .border-emerald-800 {
+  border-color: #bbf7d0 !important;
+}
+
+/* AI / Sensor / Cyan */
+html.light .bg-cyan-500\/10,
+html.light .bg-cyan-500\/20,
+html.light .bg-cyan-600\/20,
+html.light .bg-cyan-600\/30,
+html.light .bg-cyan-950,
+html.light .bg-cyan-950\/40,
+html.light .bg-cyan-950\/80 {
+  background-color: #ecfeff !important;
+  color: #0e7490 !important;
+  border-color: #a5f3fc !important;
+}
+
+html.light .border-cyan-500\/30,
+html.light .border-cyan-500\/40,
+html.light .border-cyan-800 {
+  border-color: #a5f3fc !important;
+}
+
+/* Multi-Modal Fusion / Indigo / Blue */
+html.light .bg-indigo-500\/10,
+html.light .bg-indigo-500\/20,
+html.light .bg-indigo-600\/20,
+html.light .bg-indigo-950,
+html.light .bg-indigo-950\/40,
+html.light .bg-indigo-950\/80,
+html.light .bg-blue-950,
+html.light .bg-blue-950\/80 {
+  background-color: #eef2ff !important;
+  color: #4338ca !important;
+  border-color: #c7d2fe !important;
+}
+
+html.light .border-indigo-500\/30,
+html.light .border-indigo-500\/40,
+html.light .border-indigo-800,
+html.light .border-blue-800 {
+  border-color: #c7d2fe !important;
+}
+
+/* Decision Simulator / Purple */
+html.light .bg-purple-500\/10,
+html.light .bg-purple-500\/20,
+html.light .bg-purple-950,
+html.light .bg-purple-950\/40,
+html.light .bg-purple-950\/80 {
+  background-color: #faf5ff !important;
+  color: #6d28d9 !important;
+  border-color: #e9d5ff !important;
+}
+
+html.light .border-purple-500\/30,
+html.light .border-purple-500\/40,
+html.light .border-purple-800 {
+  border-color: #e9d5ff !important;
+}
+
+/* 8. Gradient Fade Masks (Eliminating Dark Edge Smudges in Light Mode) */
+html.light .from-slate-900,
+html.light .from-slate-950 {
+  --tw-gradient-from: #ffffff var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgba(255, 255, 255, 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+html.light .to-slate-900,
+html.light .to-slate-950 {
+  --tw-gradient-to: #ffffff var(--tw-gradient-to-position) !important;
+}
+
+/* 9. Scroll Navigation Chevrons */
+html.light .bg-slate-900\/95,
+html.light .bg-slate-900\/90 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  color: #334155 !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08) !important;
+}
+
+html.light .bg-slate-900\/95:hover,
+html.light .bg-slate-900\/90:hover {
+  background-color: #f1f5f9 !important;
+  color: #0284c7 !important;
+}
+
+/* 10. Forms, Inputs & Select Elements */
+html.light input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+html.light select,
+html.light textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04) !important;
+}
+
+html.light input:focus,
+html.light select:focus,
+html.light textarea:focus {
+  border-color: #0284c7 !important;
+  box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.2) !important;
+}
+
+html.light select option {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* 11. Tooltips & Recharts in Light Mode */
+html.light .recharts-cartesian-grid line {
+  stroke: #e2e8f0 !important;
+}
+
+html.light .recharts-text {
+  fill: #475569 !important;
+  font-weight: 500;
+}
+
+html.light .recharts-default-tooltip {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 12. Interactive Hover States & Buttons in Light Mode */
+html.light .hover\:bg-slate-800:hover,
+html.light .hover\:bg-slate-800\/80:hover,
+html.light .hover\:bg-slate-700:hover,
+html.light .hover\:bg-slate-700\/50:hover {
+  background-color: #e2e8f0 !important;
+}
+
+html.light .hover\:text-white:hover,
+html.light .hover\:text-slate-100:hover,
+html.light .hover\:text-slate-200:hover {
+  color: #0f172a !important;
+}
+
+/* Brand Gradient Text in Light Mode (Rich high-contrast amber-crimson) */
+html.light .bg-clip-text {
+  background-image: linear-gradient(to right, #b45309, #c2410c, #b91c1c) !important;
+}
+
+/* Table Headers and Cell Hover in Light Mode */
+html.light table th {
+  background-color: #f1f5f9 !important;
+  color: #475569 !important;
+  border-color: #e2e8f0 !important;
+}
+
+html.light table td {
+  border-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+
+html.light table tr:hover td {
+  background-color: #f8fafc !important;
+}
+
+/* Sleek, Dark & Micro-Slim Scrollbars (Muted & Less Highlighted) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(51, 65, 85, 0.35) transparent;
+}
+
+html.dark,
+html.dark * {
+  scrollbar-color: rgba(51, 65, 85, 0.35) transparent;
+}
+
+html.light,
+html.light * {
+  scrollbar-color: rgba(203, 213, 225, 0.6) transparent;
+}
+
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background: rgba(51, 65, 85, 0.35);
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(71, 85, 105, 0.6);
+}
+
+::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Light Mode Scrollbars */
+html.light ::-webkit-scrollbar-track,
+html.light *::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html.light ::-webkit-scrollbar-thumb,
+html.light *::-webkit-scrollbar-thumb {
+  background: rgba(203, 213, 225, 0.6);
+  border-radius: 9999px;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover,
+html.light *::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.8);
+}
+
+/* Custom Scrollbar Utility Classes */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(51, 65, 85, 0.35) transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+

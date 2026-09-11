@@ -1,0 +1,11 @@
+{
+  "name": "Final_NER LandslideWatch - AI Early Warning \u0026 Risk Monitoring System",
+  "description": "Production-grade AI-powered early warning, landslide risk assessment, real-time GIS spatial intelligence, and disaster management platform for the 8 North Eastern Region (NER) states of India.",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
